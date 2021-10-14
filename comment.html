@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suggestions</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  </head>
+  <body>
+      <style>
+          *{
+              box-sizing: border-box;
+              margin-left: 10px;
+          }
+          .widthh{
+            max-width: 300px;
+          }
+          .lefty{
+              margin-right: 1250px;
+              margin-top: 20px;
+          }
+      </style>
+    <div class="card">
+      <div class="row">
+        <div class="col-10">
+          <div class="comment-box ml-2">
+            <h4>Add a comment</h4>
+            <div class="comment-area widthh">
+              <textarea
+                class="form-control"
+                name="comment"
+                placeholder="Please put up your suggestions anonymously :)"
+                rows="4"
+              ></textarea>
+            </div>
+            <div class="comment-btns mt-2 lefty" >
+              <div class="row">
+                <div class="col-6">
+                  <div class="pull-right">
+                      <form action="/saved" method="POST">
+                    <button class="btn btn-success send btn-sm">
+                      Send <i class="fa fa-long-arrow-right ml-1"></i>
+                    </button></form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
